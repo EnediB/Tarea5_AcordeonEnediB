@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acrodeon Suma</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src='https://kit.fontawesome.com/2ee0245f3d.js' crossorigin='anonymous'></script>
+    <script src='https://code.jquery.com/jquery-3.6.1.min.js'></script>
+</head>
+<body>
+    <section class="ancho">
+        <div class="contenido">
+
+            <div class="parte1">
+                <h2 class="titulo">Frequently Asked Questions</h2>
+
+                <!--Parte 1-->
+
+                <div class="acordeon">
+                    <div class="acordeon_titulo titulo1">
+                        <div class="iconos">
+                            <i class="fa-solid fa-plus mas1"></i>
+                            <i class="fa-solid fa-minus menos1"></i>
+                        </div>
+
+                        <p id="azul">Do you provide any scripts with your templates?</p>
+                    </div>
+
+                    <p class="acordeon_contenido contenido1">
+                    Our templates do not include any additional scripts. Newsletter subscriptions, search fields, forums, image galleries (in HTML versions of Flash products) are inactive. Basic scripts can be easily added at www.zemez.io If you are not sure that the element you’re interested in is active please contact our Support Chat for clarification.
+                    </p>
+                </div>
+
+                 <!--Parte 2-->
+
+                <div class="acordeon">
+                    <div class="acordeon_titulo titulo2">
+                        <div class="iconos">
+                            <i class="fa-solid fa-plus mas2"></i>
+                            <i class="fa-solid fa-minus menos2"></i>
+                        </div>
+                
+                        <p id="azul2">What do i recive when i order a template?</p>
+                    </div>
+                
+                    <p class="acordeon_contenido contenido2">
+                        After you complete the payment via our secure form you will receive the instructions for downloading the product. The source files in the download package can vary based on the type of t he product you have purchased.
+                    </p>
+                </div>
+
+
+                 <!--Parte 3-->
+                
+                <div class="acordeon">
+                    <div class="acordeon_titulo titulo3">
+                        <div class="iconos">
+                            <i class="fa-solid fa-plus mas3"></i>
+                            <i class="fa-solid fa-minus menos3"></i>
+                        </div>
+                
+                        <p id="azul3">In what formats are your available?</p>
+                    </div>
+                
+                    <p class="acordeon_contenido contenido3">
+                        Website templates are available in Photoshop and HTML formats. Fonts are included with the Photoshop file. In most templates, HTML is compatible with Adobe® Dreamweaver® and Microsoft® FrontPage®.
+                    </p>
+                </div>
+
+
+                 <!--Parte 4-->
+                
+                <div class="acordeon">
+                    <div class="acordeon_titulo titulo4">
+                        <div class="iconos">
+                            <i class="fa-solid fa-plus mas4"></i>
+                            <i class="fa-solid fa-minus menos4"></i>
+                        </div>
+                
+                        <p id="azul4">What am i allowed to do with the templates?</p>
+                    </div>
+                
+                    <p class="acordeon_contenido contenido4">
+                        You may build a website using the template in any way you like. You may not resell or redistribute templates (like we do); claim intellectual or exclusive ownership to any of our products, modified or unmodified. All products are property of content providing companies and individuals.
+                    </p>
+                </div>
+            </div>
+
+            <div class="parte2">
+                <h2 class="titulo">Skills</h2>
+
+                <div class="skill">
+                    <div class="skill1">
+                        <div class="porcentaje1">
+                            <p>Branding</p>
+                            <p>90%</p>
+                        </div>
+                        <hr class="linea1">
+                    </div>
+
+                    <div class="skill2">
+                        <div class="porcentaje1">
+                            <p>Web Design</p>
+                            <p>65%</p>
+                        </div>
+                        <hr class="linea2">
+                    </div>
+
+                    <div class="skill3">
+                        <div class="porcentaje1">
+                            <p>Copywriting</p>
+                            <p>100%</p>
+                        </div>
+                        <hr class="linea3">
+                    </div>
+
+                    <div class="skill3">
+                        <div class="porcentaje1">
+                            <p>Video Production</p>
+                            <p>75%</p>
+                        </div>
+                        <hr class="linea4">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <br><br>
+
+
+    <script>
+        
+        $(".titulo1").click(function () {
+        $(".contenido1").slideToggle();
+        $(".mas1").toggleClass("desaparecer");
+        $("#azul").toggleClass("azul");
+        });
+
+        $(".titulo2").click(function () {
+        $(".contenido2").slideToggle();
+        $(".mas2").toggleClass("desaparecer");
+        $("#azul2").toggleClass("azul");
+        });
+
+        $(".titulo3").click(function () {
+        $(".contenido3").slideToggle();
+        $(".mas3").toggleClass("desaparecer");
+        $("#azul3").toggleClass("azul");
+        });
+
+        $(".titulo4").click(function () {
+        $(".contenido4").slideToggle();
+        $(".mas4").toggleClass("desaparecer");
+        $("#azul4").toggleClass("azul");
+        });
+    </script>
+</body>
+</html>
